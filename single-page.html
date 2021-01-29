@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxSpace - Single Page</title>
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <link rel="stylesheet" href="dist/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="dist/css/modal-video.min.css">
+</head>
+
+<body class="font-OpenSans">
+    <!-- START : HEADER -->
+    <header class="z-50 w-full px-4 py-10 ">
+        <div class="flex items-center ">
+            <div class="container flex items-center justify-between mx-auto">
+                <div class="logo">
+                    <img src="dist/img/design/logo.svg" alt="">
+                </div>
+
+                <div class="flex justify-center nav-links">
+                    <ul
+                        class="fixed inset-0 flex flex-col items-center justify-center invisible bg-white wrapper md:visible md:flex md:flex-row md:bg-transparent md:relative">
+                        <li class="mx-3 my-2 cursor-pointer md:my-0 hover:underline"><a href="#">Showcase</a></li>
+                        <li class="mx-3 my-2 cursor-pointer md:my-0 hover:underline"><a href="#">Catalog</a></li>
+                        <li class="mx-3 my-2 cursor-pointer md:my-0 hover:underline"><a href="#">Delivery</a></li>
+                        <li class="mx-3 my-2 cursor-pointer md:my-0 hover:underline"><a href="#">Rewards</a></li>
+                    </ul>
+
+                    <ul class="flex items-center justify-center">
+                        <li class="mr-8 md:hidden">
+                            <button id="toggler-button" class="relative z-50 flex items-center focus:outline-none">
+                                <img src="dist/img/design/hamburger.svg" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <a href="cart.html">
+                                <img src="dist/img/design/cart.svg" alt="" class="flex items-center">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- END : HEADER -->
+
+    <!-- START : Breadcrumb -->
+    <section>
+
+        <div class="bg-gray-100">
+            <ul class="container px-4 py-8 mx-auto breadcrumb md:px-0">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="#">Office Room</a>
+                </li>
+
+
+                <li>
+                    <a href="#">Details</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- END : Breadcrumb -->
+
+    <!-- START : Details Page -->
+    <section>
+        <div class="container my-8 overflow-hidden md:flex md:mx-auto">
+
+            <!-- Tittle -->
+            <div class="w-full px-4 md:hidden">
+                <h2 class="pb-2 text-4xl font-semibold">Chair Tatty</h2>
+                <span class="text-xl">IDR 12.000.000</span>
+            </div>
+
+
+            <!-- Preview & Thumbnail -->
+            <div class="flex flex-wrap md:mx-12">
+                <!-- Preview Image -->
+                <div class="order-first px-4 my-4 overflow-hidden md:px-0 md:order-last md:w-560">
+                    <img src="dist/img/content/img-details-1.png" alt=""
+                        class="object-cover object-center w-full h-full rounded-2xl">
+                </div>
+
+                <!-- Thumbnail -->
+                <div class="relative flex flex-nowrap md:mx-0 md:my-4 md:flex-col thumbnail">
+
+                    <!-- thumbnail 1 -->
+                    <div class="relative overflow-hidden cursor-pointer w-106 h-106 item md:mb-4">
+                        <img src="dist/img/content/item-thumbnail-1.png" alt=""
+                            class="object-cover object-center w-full h-full rounded-2xl">
+                        <div class="click-thumbnail"></div>
+                    </div>
+
+                    <!-- thumbnail 2 -->
+                    <div class="ml-4 overflow-hidden cursor-pointer w-106 h-106 item md:ml-0 md:mb-4 md:mr-4">
+                        <img src="dist/img/content/item-thumbnail-2.png" alt=""
+                            class="object-cover object-center w-full h-full rounded-2xl">
+                    </div>
+
+                    <!-- thumbnail 3 -->
+                    <div class="ml-4 overflow-hidden cursor-pointer w-106 h-106 item md:ml-0 md:mb-4 md:mr-4">
+                        <img src="dist/img/content/item-thumbnail-3.png" alt=""
+                            class="object-cover object-center w-full h-full rounded-2xl">
+                    </div>
+
+                    <!-- thumbnail 4 -->
+                    <div class="ml-4 overflow-hidden cursor-pointer w-106 h-106 item md:ml-0 md:mb-4 md:mr-4">
+                        <img src="dist/img/content/item-thumbnail-4.png" alt=""
+                            class="object-cover object-center w-full h-full rounded-2xl">
+                    </div>
+
+                    <!-- thumbnail 5 -->
+                    <div class="ml-4 overflow-hidden cursor-pointer w-106 h-106 item md:ml-0 md:mr-4">
+                        <img src="dist/img/content/img-details-1.png" alt=""
+                            class="object-cover object-center w-full h-full rounded-2xl">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CTA & Deskripsi -->
+            <div class="flex-1 mx-4 my-4 md:mx-0 md:ml-4">
+
+                <!-- tittle -->
+                <div class="hidden md:block">
+                    <h3 class="text-4xl font-semibold">Chair Tatty</h3>
+                    <span class="font-lg">IDR 12.000.000</span>
+                </div>
+
+                <!-- Add to cart -->
+                <div class="bg-pink-200 rounded-full cursor-pointer cta hover:bg-pink-300 md:my-8 md:w-4/12">
+                    <div class="relative flex justify-center py-2">
+                        <img src="dist/img/design/cart.svg" alt="">
+                        <span class="px-2 font-semibold">Add to cart</span>
+                        <a href="cart.html" class="absolute inset-0 z-10"></a>
+                    </div>
+                </div>
+
+                <hr class="my-4">
+
+                <!-- Deskripsi -->
+                <div class="my-4">
+                    <h3 class="text-lg font-semibold">About the product:</h3>
+                    <p class="my-4">Tailored to a level of perfection synonymous with that of a Savile Row suit and with
+                        understated
+                        quality in the
+                        detail, Jetty has been influenced by timeless 1950s style.
+                        <br><br>
+                        Providing a subtle nod to the past, Jetty also provides a perfect solution for the way we work
+                        today. A comprehensive product family, Jetty features a variety
+                        of elegant chairs and sofas.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- END : Details Page -->
+
+    <!-- START: Sugestion Page -->
+    <section class="bg-gray-100 ">
+        <div class="py-24">
+            <div class="container md:mx-auto md:mx-0">
+                <!-- Tittle -->
+                <div class="px-4">
+                    <h3 class="text-xl font-semibold">Complete Your Room <br>
+                        With What We Designed</h3>
+                </div>
+                <!-- Tittle -->
+            </div>
+
+            <!-- Card Items Suggestion -->
+            <div class="overflow-hidden">
+                <div class="relative flex flex-row pt-4 mx-4 md:container md:mx-auto md:justify-center owl-carousel">
+
+                    <!-- items 1 -->
+                    <div class="relative flex flex-col">
+                        <div class="flex justify-center overflow-hidden bg-white rounded-2xl w-287 h-328">
+                            <div class="w-4/5 overflow-hidden">
+                                <div class="my-8 overflow-hidden h-1/2">
+                                    <img src="dist/img/content/item-suggestion-1.png" alt=""
+                                        class="object-cover object-center w-full h-full rounded-2xl">
+                                </div>
+                                <div class="tittle">
+                                    <h3 class="text-xl font-semibold">Office Chair</h3>
+                                    <span>IDR 89.300.000</span>
+                                </div>
+                                <a href="#" class="absolute inset-0 z-10"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- items 1 -->
+
+                    <!-- items 2 -->
+                    <div class="relative flex flex-col">
+                        <div class="flex justify-center overflow-hidden bg-white rounded-2xl w-287 h-328">
+                            <div class="w-4/5 overflow-hidden">
+                                <div class="my-8 overflow-hidden h-1/2">
+                                    <img src="dist/img/content/item-suggestion-2.png" alt=""
+                                        class="object-cover object-center w-full h-full rounded-2xl">
+                                </div>
+                                <div class="tittle">
+                                    <h3 class="text-xl font-semibold">Office Chair</h3>
+                                    <span>IDR 89.300.000</span>
+                                </div>
+                                <a href="#" class="absolute inset-0 z-10"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- items 2 -->
+
+                    <!-- items 3 -->
+                    <div class="relative flex flex-col">
+                        <div class="flex justify-center overflow-hidden bg-white rounded-2xl w-287 h-328">
+                            <div class="w-4/5 overflow-hidden">
+                                <div class="my-8 overflow-hidden h-1/2">
+                                    <img src="dist/img/content/item-suggestion-3.png" alt=""
+                                        class="object-cover object-center w-full h-full rounded-2xl">
+                                </div>
+                                <div class="tittle">
+                                    <h3 class="text-xl font-semibold">Office Chair</h3>
+                                    <span>IDR 89.300.000</span>
+                                </div>
+                                <a href="#" class="absolute inset-0 z-10"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- items 3 -->
+
+                    <!-- items 4 -->
+                    <div class="relative flex flex-col">
+                        <div class="flex justify-center overflow-hidden bg-white rounded-2xl w-287 h-328">
+                            <div class="w-4/5 overflow-hidden">
+                                <div class="my-8 overflow-hidden h-1/2">
+                                    <img src="dist/img/content/item-suggestion-4.png" alt=""
+                                        class="object-cover object-center w-full h-full rounded-2xl">
+                                </div>
+                                <div class="tittle">
+                                    <h3 class="text-xl font-semibold">Office Chair</h3>
+                                    <span>IDR 89.300.000</span>
+                                </div>
+                                <a href="#" class="absolute inset-0 z-10"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- items 4 -->
+
+                </div>
+            </div>
+            <!-- Card Items Suggestion -->
+        </div>
+    </section>
+    <!-- END: Sugestion Page -->
+
+    <!-- START : Footer Section -->
+    <section class="">
+        <div class="flex flex-col pb-7">
+            <div class="py-24 md:pl-32">
+                <div class="container flex justify-center mx-auto pb-7">
+                    <button>
+                        <img src="dist/img/design/logo.svg" alt="" class="md:hidden">
+                    </button>
+                </div>
+
+                <div class="flex flex-col mx-14 md:flex-row md:justify-between md:w-978">
+
+                    <!-- START : Footer Section | Menu 1 -->
+                    <div class="flex justify-between accordion-overview">
+                        <div class="flex justify-between pb-5 md:flex-col accordion-wrapper ">
+                            <h3 class="text-lg font-semibold">Overview</h3>
+                            <ul
+                                class="hidden transition-all duration-500 md:opacity-100 md:flex-col md:flex md:pt-3 accordion-menu">
+                                <li>
+                                    <a href="#">Shiping</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">Refund</a>
+                                </li>
+                                <li>
+                                    <a href="#">Promotion</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button class="transition duration-200 accordion-toggle focus:outline-none">
+                                <img src="dist/img/design/dropdown.svg" alt="" class="md:hidden">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- START : Footer Section | Menu 1 -->
+
+                    <!-- START : Footer Section | Menu 2-->
+                    <div class="flex justify-between accordion-company">
+                        <div class="flex justify-between pb-5 md:flex-col accordion-wrapper ">
+                            <h3 class="text-lg font-semibold">Company</h3>
+                            <ul
+                                class="hidden transition-all duration-500 md:opacity-100 md:flex-col md:flex md:pt-3 accordion-menu">
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">Career</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button class="transition duration-200 accordion-toggle focus:outline-none">
+                                <img src="dist/img/design/dropdown.svg" alt="" class="md:hidden">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- START : Footer Section | Menu 2 -->
+
+                    <!-- START : Footer Section | Menu 3 -->
+                    <div class="flex justify-between accordion-explore">
+                        <div class="flex justify-between pb-5 md:flex-col accordion-wrapper ">
+                            <h3 class="text-lg font-semibold">Explore</h3>
+                            <ul
+                                class="hidden transition-all duration-500 md:opacity-100 md:flex-col md:flex md:pt-3 accordion-menu">
+                                <li>
+                                    <a href="#">Terms & Conds</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">For Developer</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button class="transition duration-200 accordion-toggle focus:outline-none">
+                                <img src="dist/img/design/dropdown.svg" alt="" class="md:hidden">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- START : Footer Section | Menu 3 -->
+
+                    <!-- START : Footer Section | Menu 1 -->
+                    <div class="flex flex-col justify-between pb-5">
+                        <h3 class="pb-4 text-lg font-semibold">Special Letter</h3>
+                        <div class="relative flex md:mb-10">
+                            <input type="email" class="pl-3 bg-gray-100 rounded-lg focus:outline-none"
+                                style="width: 295px; height: 45px;" placeholder="Your email address" />
+                            <button class="">
+                                <div class="transition duration-200 bg-pink-400 rounded-lg hover:bg-pink-500"
+                                    style="width: 45px; height: 45px;">
+                                    <img src="dist/img/design/send-email.svg" alt="" class="w-full h-full p-3">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- END : Footer Section | Menu 1 -->
+                </div>
+            </div>
+            <h3 class="flex items-center justify-center py-8 font-semibold text-center">Copyright 2021 • <br
+                    class="md:hidden" />
+                All Rights Reserved LuxSpace by BuildWith Angga</h3>
+        </div>
+
+    </section>
+    <!-- END : Footer Section -->
+
+    <!-- START : JS Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="src/js/owl.carousel.min.js"></script>
+
+    <!-- START: Menu Hamburger -->
+    <script src="src/js/menu-toggler.js"></script>
+    <!-- START: Menu Hamburger -->
+
+    <!-- START: Carousel -->
+    <script src="src/js/carousel-single-page.js"></script>
+    <!-- START: Carousel -->
+
+    <!-- START : Accordion -->
+    <script src="src/js/accordion.js"></script>
+    <!-- END : Accordion -->
+    <script src="src/js/smooth-scroll.js"></script>
+    <script src="src/js/modal-video.js"></script>
+    <script src="src/js/jquery-modal-video.min.js"></script>
+    <script>
+        $(".btn-play").modalVideo();
+    </script>
+    <!-- END : JS Jquery -->
+    <script src="../src/js/thumbnail.js"></script>
+
+</body>
+
+</html>

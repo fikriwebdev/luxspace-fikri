@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS - Luxspace</title>
+    <link rel="stylesheet" href="dist/css/styles.css">
+    <link rel="stylesheet" href="dist/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="dist/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="dist/css/modal-video.min.css">
+</head>
+
+<body class="font-OpenSans">
+    <!-- START : HEADER -->
+    <header class="absolute z-50 w-full px-4 py-10 ">
+        <div class="flex items-center ">
+            <div class="container flex items-center justify-between mx-auto">
+                <div class="logo">
+                    <img src="img/design/logo.svg" alt="">
+                </div>
+
+                <div class="flex justify-center nav-links">
+                    <ul
+                        class="fixed inset-0 flex flex-col items-center justify-center invisible bg-white wrapper md:visible md:flex md:flex-row md:bg-transparent md:relative">
+                        <li class="mx-3 my-2 cursor-pointer md:my-0 hover:text-white hover:underline"><a
+                                href="#">Showcase</a></li>
+                        <li class="mx-3 my-2 cursor-pointer md:my-0 hover:text-white hover:underline"><a
+                                href="#">Catalog</a></li>
+                        <li class="mx-3 my-2 cursor-pointer md:my-0 hover:text-white hover:underline"><a
+                                href="#">Delivery</a></li>
+                        <li class="mx-3 my-2 cursor-pointer md:my-0 hover:text-white hover:underline"><a
+                                href="#">Rewards</a></li>
+                    </ul>
+
+                    <ul class="flex items-center justify-center">
+                        <li class="mr-8 md:hidden">
+                            <button id="toggler-button" class="relative z-50 flex items-center focus:outline-none">
+                                <img src="dist/img/design/hamburger.svg" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <a href="cart.html">
+                                <img src="dist/img/design/cart.svg" alt="" class="flex items-center">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </header>
+    <!-- END : HEADER -->
+
+    <!-- START : HERO -->
+    <section class="md:flex md:items-center md:justify-center md:justify-between">
+
+        <!-- START : Hero Caption -->
+        <div class="absolute inset-0 z-30 flex flex-col items-center justify-center md:relative md:w-1/2">
+            <div class="flex flex-col items-center justify-center text-center hero-caption">
+                <h1 class="text-4xl font-semibold leading-tight">The Room <br />
+                    You’ve Dreaming</h1>
+                <p class="py-5 text-base tracking-wide">Kami menyediakan furniture berkelas <br />yang membuat
+                    ruangan
+                    terasa
+                    homey </p>
+                <a href="#browse-the-room"
+                    class="px-8 py-3 font-semibold transition duration-200 bg-pink-300 rounded-full hover:bg-black hover:text-pink-300 focus:outline-none">
+                    Explore Now
+                </a>
+            </div>
+        </div>
+        <!-- END : Hero Caption -->
+
+
+        <!-- START : Hero Image -->
+        <div class="relative min-h-90 hero-image md:min-h-0">
+            <div
+                class="absolute bottom-0 right-0 z-30 transform -translate-x-4 translate-y-8 md:inset-0 md:flex md:items-center md:justify-center">
+                <button class="focus:outline-none btn-play" data-video-id="zNVLRAyjYII">
+                    <img src="dist/img/design/icon-play.svg" alt=""
+                        class="flex items-center px-5 py-5 duration-200 bg-blue-300 rounded-full focus:outline-none hover:bg-blue-400">
+                </button>
+            </div>
+            <div class="absolute inset-0 z-10 bg-black opacity-30 md:hidden"></div>
+            <img src="dist/img/content/banner.jpg" alt=""
+                class="absolute object-cover object-center w-full h-full md:relative">
+        </div>
+        <!-- END : Hero Image -->
+    </section>
+    <!-- END : HERO -->
+
+    <!-- START : Browse The Room Section -->
+    <section class="min-h-screen bg-gray-100 " id="browse-the-room">
+        <div class="container px-4 py-24 mx-auto">
+            <div class="title">
+                <h1 class="pb-8 text-2xl font-semibold text-left text-black">Browse The Room <br />
+                    That We Designed For You</h1>
+            </div>
+            <div class="content">
+                <ul class="grid grid-cols-1 grid-rows-1 gap-4 justify-items-center md:grid-cols-9 md:grid-rows-2">
+
+                    <!-- START : Browse The Room | Card 1 -->
+                    <li
+                        class="relative overflow-hidden col-span-full hover:shadow-lg rounded-3xl h-44 md:col-span-4 md:row-span-1 md:w-full md:h-44">
+
+                        <img src="dist/img/content/living-room.png" alt=""
+                            class="object-cover w-full h-full overflow-hidden ">
+
+                        <div class="absolute inset-0 flex flex-col justify-center pl-56 md:pl-72">
+                            <h3 class="text-lg font-semibold">Living Room</h3>
+                            <p class="">18,309 Items</p>
+                        </div>
+                        <a href="#" class="absolute inset-0"></a>
+                    </li>
+                    <!-- END : Browse The Room | Card 1 -->
+
+                    <!-- START : Browse The Room | Card 3 -->
+                    <li
+                        class="relative w-full row-span-2 overflow-hidden col-span-full w-96 h-44 hover:shadow-lg rounded-3xl md:col-span-2 md:row-span-2 md:h-full ">
+                        <img src="dist/img/content/decoration.png" alt=""
+                            class="absolute object-cover w-full h-full rounded-3xl">
+                        <div
+                            class="absolute inset-0 flex flex-col justify-center pl-56 md:mr-0 md:pl-0 md:justify-start md:inset-0 md:place-items-center md:pt-8">
+                            <h3 class="text-lg font-semibold">Decoration</h3>
+                            <p class="">837 Items</p>
+                        </div>
+                        <a href="#" class="absolute inset-0"></a>
+                    </li>
+                    <!-- START : Browse The Room | Card 3 -->
+
+                    <!-- START : Browse The Room | Card 4 -->
+                    <li
+                        class="relative w-full overflow-hidden hover:shadow-lg col-span-full h-44 rounded-3xl md:col-span-3 md:row-span-2 md:h-full">
+
+                        <img src="dist/img/content/bedroom.png" alt=""
+                            class="object-cover w-full h-full overflow-hidden rounded-3xl">
+
+                        <div
+                            class="absolute inset-0 flex flex-col justify-center pl-56 md:mr-0 md:pl-0 md:justify-start md:inset-0 md:place-items-center md:pt-8">
+                            <h3 class="text-lg font-semibold">Bed Room</h3>
+                            <p class="">22,094 Items</p>
+                        </div>
+                        <a href="#" class="absolute inset-0"></a>
+                    </li>
+                    <!-- END : Browse The Room | Card 4 -->
+
+                    <!-- START : Browse The Room | Card 2 -->
+                    <li
+                        class="relative w-full overflow-hidden col-span-full h-44 hover:shadow-lg rounded-3xl md:col-span-4 md:row-span-1 md:w-full md:h-44">
+                        <img src="dist/img/content/kids-room.png" alt=""
+                            class="object-cover w-full h-full overflow-hidden rounded-3xl">
+
+                        <div class="absolute inset-0 flex flex-col justify-center pl-56 md:pl-72">
+                            <h3 class="text-lg font-semibold">Kids Room</h3>
+                            <p class="">837 Items</p>
+                        </div>
+                        <a href="single-page.html" class="absolute inset-0"></a>
+                    </li>
+                    <!-- END : Browse The Room | Card 2 -->
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- END: Browse The Room Section -->
+
+    <!-- START : Just Arrived Section -->
+    <section class="flex flex-col py-20 ">
+        <div class="container mx-auto mb-4">
+            <div class="flex justify-center ">
+                <h3 class="text-2xl font-semibold text-center pb-7">Just Arrived <br /> This Summer
+                    For
+                    You
+                </h3>
+            </div>
+        </div>
+
+        <!-- START: Just Arrived Card -->
+        <div class="overflow-hidden">
+            <div class="mx-4 md:mx-8 owl-carousel">
+
+                <!-- START: Item Carousel 1 -->
+                <div class="relative flex flex-col">
+                    <div class="overflow-hidden rounded-2xl hover:shadow-sm" style="height: 386px; width: 287px;">
+                        <img src="dist/img/content/img-carousel-1.png" alt=""
+                            class="object-cover object-center w-full h-full">
+                    </div>
+                    <div class="pt-4 title">
+                        <h3 class="pb-1 text-lg font-semibold">Cangkir Mauttie</h3>
+                        <span>IDR 87.300.000</span>
+                    </div>
+                    <a href="#" class="absolute inset-0 z-10 focus:outline-none"></a>
+                </div>
+                <!-- END: Item Carousel 1 -->
+
+
+                <!-- START: Item Carousel 2 -->
+                <div class="relative flex flex-col">
+                    <div class="overflow-hidden rounded-2xl hover:shadow-sm " style="height: 386px; width: 287px;">
+                        <img src="dist/img/content/img-carousel-2.png" alt=""
+                            class="object-cover object-center w-full h-full">
+                    </div>
+                    <div class="pt-4 title">
+                        <h3 class="pb-1 text-lg font-semibold">Bankyu Minimax</h3>
+                        <span>IDR 67.000.000</span>
+                    </div>
+                    <a href="#" class="absolute inset-0 z-10 focus:outline-none"></a>
+                </div>
+                <!-- END: Item Carousel 2 -->
+
+                <!-- START : Item Carousel 3 -->
+                <div class="relative flex flex-col">
+                    <div class="overflow-hidden rounded-2xl hover:shadow-sm " style="height: 386px; width: 287px;">
+                        <img src="dist/img/content/img-carousel-3.png" alt=""
+                            class="object-cover object-center w-full h-full">
+                    </div>
+                    <div class="pt-4 title">
+                        <h3 class="pb-1 text-lg font-semibold">Buku Sidu Edition</h3>
+                        <span>IDR 12.000.000</span>
+                    </div>
+                    <a href="#" class="absolute inset-0 z-10 focus:outline-none"></a>
+                </div>
+                <!-- END : Item Carousel 3 -->
+
+                <!-- START : Item Carousel 4 -->
+                <div class="relative flex flex-col">
+                    <div class="overflow-hidden rounded-2xl hover:shadow-sm " style="height: 386px; width: 287px;">
+                        <img src="dist/img/content/img-carousel-4.png" alt=""
+                            class="object-cover object-center w-full h-full">
+                    </div>
+                    <div class="pt-4 title">
+                        <h3 class="pb-1 text-lg font-semibold">Watch Notes X</h3>
+                        <span>IDR 73.000.000</span>
+                    </div>
+                    <a href="#" class="absolute inset-0 z-10 focus:outline-none"></a>
+                </div>
+                <!-- END : Item Carousel 4 -->
+
+                <!-- START : Item Carousel 5 -->
+                <div class="relative flex flex-col">
+                    <div class="overflow-hidden rounded-2xl hover:shadow-sm " style="height: 386px; width: 287px;">
+                        <img src="dist/img/content/img-carousel-5.png" alt=""
+                            class="object-cover object-center w-full h-full">
+                    </div>
+                    <div class="pt-4 title">
+                        <h3 class="pb-1 text-lg font-semibold">Racking Plants</h3>
+                        <span>IDR 2.400.000</span>
+                    </div>
+                    <a href="#" class="absolute inset-0 z-10 focus:outline-none"></a>
+                </div>
+                <!-- END : Item Carousel 5 -->
+            </div>
+            <!-- END: Just Arrived Card -->
+    </section>
+    <!-- END : Just Arrived Section -->
+
+    <!-- START : Partner Section -->
+    <section class="pb-24">
+        <div class="relative overflow-hidden">
+            <div
+                class="container relative flex flex-col items-center mx-4 md:justify-between md:mx-auto md:flex-row md:w-978">
+                <!-- START: Partner 1 -->
+                <div class="" style="width: 166px; height: 39px;">
+                    <img src="dist/img/design/partner-1.svg" alt="" class="object-center w-full h-full">
+                </div>
+                <!-- END: Partner 1 -->
+
+                <!-- START: Partner 2 -->
+                <div class="mt-4 ml-7 md:ml-0 md:mt-0" style="width: 166px; height: 39px;">
+                    <img src="dist/img/design/partner-2.svg" alt="" class="object-center w-full h-full">
+                </div>
+                <!-- END: Partner 2 -->
+
+                <!-- START: Partner 3 -->
+                <div class="mt-4 ml-7 md:ml-0 md:mt-0" style="width: 166px; height: 39px;">
+                    <img src="dist/img/design/partner-3.svg" alt="" class="object-center w-full h-full">
+                </div>
+                <!-- END: Partner 3 -->
+
+                <!-- START: Partner 4 -->
+                <div class="mt-4 ml-7 md:ml-0 md:mt-0">
+                    <img src="dist/img/design/partner-4.svg" alt="" style="width: 166px; height: 39px;"
+                        class="object-center w-full h-full">
+                </div>
+                <!-- END: Partner 4 -->
+            </div>
+        </div>
+    </section>
+    <!-- END : Partner Section -->
+
+    <!-- START : Footer Section -->
+    <section class="">
+        <div class="flex flex-col pb-7">
+            <div class="py-24 border-t border-b md:pl-32">
+                <div class="container flex justify-center mx-auto pb-7">
+                    <button>
+                        <img src="dist/img/design/logo.svg" alt="" class="md:hidden">
+                    </button>
+                </div>
+
+                <div class="flex flex-col mx-14 md:flex-row md:justify-between md:w-978">
+
+                    <!-- START : Footer Section | Menu 1 -->
+                    <div class="flex justify-between accordion-overview">
+                        <div class="flex justify-between pb-5 md:flex-col accordion-wrapper ">
+                            <h3 class="text-lg font-semibold">Overview</h3>
+                            <ul
+                                class="hidden transition-all duration-500 md:opacity-100 md:flex-col md:flex md:pt-3 accordion-menu">
+                                <li>
+                                    <a href="#">Shiping</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">Refund</a>
+                                </li>
+                                <li>
+                                    <a href="#">Promotion</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button class="transition duration-200 accordion-toggle focus:outline-none">
+                                <img src="dist/img/design/dropdown.svg" alt="" class="md:hidden">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- START : Footer Section | Menu 1 -->
+
+                    <!-- START : Footer Section | Menu 2-->
+                    <div class="flex justify-between accordion-company">
+                        <div class="flex justify-between pb-5 md:flex-col accordion-wrapper ">
+                            <h3 class="text-lg font-semibold">Company</h3>
+                            <ul
+                                class="hidden transition-all duration-500 md:opacity-100 md:flex-col md:flex md:pt-3 accordion-menu">
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">Career</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button class="transition duration-200 accordion-toggle focus:outline-none">
+                                <img src="dist/img/design/dropdown.svg" alt="" class="md:hidden">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- START : Footer Section | Menu 2 -->
+
+                    <!-- START : Footer Section | Menu 3 -->
+                    <div class="flex justify-between accordion-explore">
+                        <div class="flex justify-between pb-5 md:flex-col accordion-wrapper ">
+                            <h3 class="text-lg font-semibold">Explore</h3>
+                            <ul
+                                class="hidden transition-all duration-200 md:opacity-100 md:flex-col md:flex md:pt-3 accordion-menu">
+                                <li>
+                                    <a href="#">Terms & Conds</a>
+                                </li>
+                                <li class="py-2">
+                                    <a href="#">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#">For Developer</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button class="transition duration-200 accordion-toggle focus:outline-none">
+                                <img src="dist/img/design/dropdown.svg" alt="" class="md:hidden">
+                            </button>
+                        </div>
+                    </div>
+                    <!-- START : Footer Section | Menu 3 -->
+
+                    <!-- START : Footer Section | Menu 1 -->
+                    <div class="flex flex-col justify-between pb-5">
+                        <h3 class="pb-4 text-lg font-semibold">Special Letter</h3>
+                        <div class="relative flex md:mb-10">
+                            <input type="email" class="pl-3 bg-gray-100 rounded-lg focus:outline-none"
+                                style="width: 295px; height: 45px;" placeholder="Your email address" />
+                            <button class="">
+                                <div class="transition duration-200 bg-pink-400 rounded-lg hover:bg-pink-500"
+                                    style="width: 45px; height: 45px;">
+                                    <img src="dist/img/design/send-email.svg" alt="" class="w-full h-full p-3">
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- END : Footer Section | Menu 1 -->
+                </div>
+            </div>
+            <h3 class="flex items-center justify-center py-8 font-semibold text-center">Copyright 2021 • <br
+                    class="md:hidden" />
+                All Rights Reserved LuxSpace by BuildWith Angga</h3>
+        </div>
+
+    </section>
+    <!-- END : Footer Section -->
+
+
+    <!-- START : JS Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="src/js/owl.carousel.min.js"></script>
+
+    <!-- START: Menu Hamburger -->
+    <script src="src/js/menu-toggler.js"></script>
+    <!-- START: Menu Hamburger -->
+
+    <!-- START: Carousel -->
+    <script src="src/js/carousel.js"></script>
+    <!-- START: Carousel -->
+
+    <!-- START : Accordion -->
+    <script src="src/js/accordion.js"></script>
+    <!-- END : Accordion -->
+    <script src="src/js/smooth-scroll.js"></script>
+    <script src="src/js/modal-video.js"></script>
+    <script src="src/js/jquery-modal-video.min.js"></script>
+    <script>
+        $(".btn-play").modalVideo();
+    </script>
+    <!-- END : JS Jquery -->
+</body>
+
+</html>

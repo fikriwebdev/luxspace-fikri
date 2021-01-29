@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .min-h-90 {
+        min-height: 90vh;
+    }
+
+    ul.breadcrumb {
+        @apply flex flex-row items-center text-lg;
+    }
+
+    ul.breadcrumb li:last-child a {
+        @apply font-semibold;
+    }
+
+    ul.breadcrumb li:not(:last-child) a {
+        @apply font-light;
+    }
+
+    ul.breadcrumb li:not(:last-child)::after {
+        content: '/';
+        @apply px-4;
+    }
+
+    .thumbnail ul li {
+        width: 106px;
+        height: 106px;
+        cursor: pointer;
+    }
+
+    .selected {
+        @apply absolute inset-0 bg-black border-2 border-black bg-opacity-30 rounded-2xl;
+    }
+
+    #toggler-button .line1 {
+        content: '';
+        width: 17px;
+        height: 2px;
+        @apply bg-black;
+    }
+
+    #toggler-button .line2 {
+        content: '';
+        width: 17px;
+        height: 2px;
+        margin: 6px 0;
+        @apply bg-black;
+    }
+
+    #toggler-button .line3 {
+        content: '';
+        width: 17px;
+        height: 2px;
+        @apply bg-black;
+    }
+}
